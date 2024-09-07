@@ -1,0 +1,57 @@
+---
+import { Icon } from 'astro-icon/components'
+import { instagram, tiktok } from 'skill-icons/icons'
+
+const { pathname } = Astro.url
+
+const menuList = [
+  {
+    name: 'Доставка та оплата',
+    href: '/delivery',
+    active: pathname === '/delivery',
+  },
+  {
+    name: 'Про магазин',
+    href: '/about',
+    active: pathname === '/about',
+  },
+]
+
+const socialList = [
+  {
+    name: 'Instagram',
+    href: 'https://www.instagram.com/example',
+    icon: 'skill-icons:instagram',
+  },
+]
+---
+
+<header class="p-2 border-solid border-t border-b border-gray-light">
+  <div class="container mx-auto px-4 flex justify-between items-center">
+    <a class="text-2xl font-bold" href="/">Logo</a>
+    <div class="flex items-center gap-8">
+      <nav>
+        <ul class="flex gap-6">
+          {
+            menuList.map((item) => (
+              <li>
+                <a href={item.href} class={item.active ? 'text-blue' : 'hover:text-blue duration-150'}>
+                  {item.name}
+                </a>
+              </li>
+            ))
+          }
+        </ul>
+      </nav>
+      <div class="flex gap-6">
+        {
+          socialList.map((item) => (
+            <a href={item.href} class="text-gray-600 hover:text-gray-900 duration-150">
+              <Icon class="w-6 h-6" name={item.icon} />
+            </a>
+          ))
+        }
+      </div>
+    </div>
+  </div>
+</header>

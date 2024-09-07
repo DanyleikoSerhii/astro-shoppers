@@ -1,8 +1,10 @@
 ---
 import { App } from '~/components/app'
 import Layout from '../layouts/Layout.astro'
+import { Slider } from '~/components/slider/slider'
 ---
 
-<Layout title="Welcome to Bun Astro.">
-  <App client:only />
+<Layout title="Lialina">
+  <Slider client:load />
+  <App client:load />
 </Layout>
