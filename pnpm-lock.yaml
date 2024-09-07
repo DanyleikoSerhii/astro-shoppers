@@ -18,7 +18,7 @@ importers:
         specifier: 4.4.1
         version: 4.4.1(solid-js@1.8.22)(vite@5.4.3(@types/node@22.5.4)(sass-embedded@1.78.0))
       '@astrojs/vercel':
-        specifier: ^7.8.0
+        specifier: 7.8.0
         version: 7.8.0(astro@4.15.4(@types/node@22.5.4)(rollup@4.21.2)(sass-embedded@1.78.0)(typescript@5.5.4))
       '@types/node':
         specifier: 22.5.4
@@ -29,9 +29,9 @@ importers:
       convex:
         specifier: 1.15.0
         version: 1.15.0
-      estree-walker:
-        specifier: ^3.0.3
-        version: 3.0.3
+      solid-js:
+        specifier: ^1.8.22
+        version: 1.8.22
     devDependencies:
       eslint:
         specifier: 9.10.0
