@@ -5,7 +5,14 @@
     "allowJs": true,
     "baseUrl": ".",
     "paths": {
-      "~/*": ["src/*"]
-    }
+      "~/*": [
+        "src/*"
+      ],
+      "~convex/*": [
+        "convex/*"
+      ],
+    },
+    "jsx": "preserve",
+    "jsxImportSource": "solid-js"
   }
 }

@@ -8,21 +8,29 @@
     "build": "astro check && astro build",
     "preview": "astro preview",
     "astro": "astro",
+    "convex:dev": "convex dev",
+    "convex:deploy": "convex deploy",
+    "convex:studio": "convex studio",
     "prettier:check": "prettier --c 'src/**/*.{js,jsx,ts,tsx,css,scss,astro}'",
     "prettier:fix": "prettier --w 'src/**/*.{js,jsx,ts,tsx,css,scss,astro}'",
-    "lint:eslint": "eslint . --ext .js,.ts,.astro"
+    "lint:eslint": "npx eslint . --c .js,.ts,.astro"
   },
   "dependencies": {
     "@astrojs/check": "0.9.3",
+    "@astrojs/solid-js": "^4.4.1",
     "@astrojs/vercel": "7.8.0",
-    "astro": "4.15.1"
+    "@types/node": "^22.5.4",
+    "astro": "4.15.4",
+    "convex": "1.15.0"
   },
   "devDependencies": {
+    "eslint": "9.10.0",
+    "eslint-plugin-astro": "1.2.3",
+    "eslint-plugin-jsx-a11y": "6.10.0",
+    "eslint-plugin-simple-import-sort": "12.1.1",
     "prettier": "3.3.3",
     "prettier-plugin-astro": "0.14.1",
-    "eslint": "9.9.1",
-    "eslint-plugin-astro": "1.2.3",
-    "eslint-plugin-jsx-a11y": "6.9.0",
+    "sass-embedded": "^1.78.0",
     "typescript": "5.5.4"
   }
 }
