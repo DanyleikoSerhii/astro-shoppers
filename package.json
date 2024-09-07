@@ -23,7 +23,7 @@
     "@types/node": "22.5.4",
     "astro": "4.15.4",
     "convex": "1.15.0",
-    "solid-js": "^1.8.22"
+    "solid-js": "1.8.22"
   },
   "devDependencies": {
     "eslint": "9.10.0",
