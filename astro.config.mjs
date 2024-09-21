@@ -1,6 +1,6 @@
 import { defineConfig } from 'astro/config'
 import vercel from '@astrojs/vercel/serverless'
-import { imageService } from "@unpic/astro/service";
+import { imageService } from '@unpic/astro/service'
 
 import solidJs from '@astrojs/solid-js'
 import tailwind from '@astrojs/tailwind'

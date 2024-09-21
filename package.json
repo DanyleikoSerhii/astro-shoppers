@@ -24,6 +24,7 @@
     "@iconify-json/mdi": "1.2.0",
     "@iconify-json/skill-icons": "1.2.0",
     "@types/node": "22.5.5",
+    "@unpic/astro": "^0.0.47",
     "astro": "4.15.8",
     "astro-icon": "1.1.1",
     "convex": "1.16.2",
