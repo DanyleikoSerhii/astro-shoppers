@@ -5,6 +5,6 @@ export const useCounterStore = () => {
 
   return {
     count: () => state.count,
-    setCount: (value: number) => setState('count', value)
+    setCount: (value: number) => setState('count', value),
   }
 }

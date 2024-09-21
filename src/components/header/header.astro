@@ -27,7 +27,7 @@ const socialList = [
 
 <header class="p-2 border-solid border-t border-b border-gray-light">
   <div class="container mx-auto px-4 flex justify-between items-center">
-    <a class="text-2xl font-bold" href="/">Logo</a>
+    <a class="text-2xl font-bold" href="/">LiaLiNa</a>
     <div class="flex items-center gap-8">
       <nav>
         <ul class="flex gap-6">
@@ -45,7 +45,7 @@ const socialList = [
       <div class="flex gap-6">
         {
           socialList.map((item) => (
-            <a href={item.href} class="text-gray-600 hover:text-gray-900 duration-150">
+            <a target="_blank" href={item.href} class="text-gray-600 hover:text-gray-900 duration-150">
               <Icon class="w-6 h-6" name={item.icon} />
             </a>
           ))
