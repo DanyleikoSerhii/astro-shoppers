@@ -40,7 +40,6 @@
     "eslint-plugin-jsx-a11y": "6.10.0",
     "eslint-plugin-simple-import-sort": "12.1.1",
     "prettier": "3.3.3",
-    "prettier-plugin-astro": "0.14.1",
-    "@types/solid-slider": ""
+    "prettier-plugin-astro": "0.14.1"
   }
 }
