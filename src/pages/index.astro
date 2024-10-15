@@ -1,10 +1,16 @@
 ---
+import { ConvexHttpClient } from 'convex/browser'
+import { api } from '../../convex/_generated/api'
+
 import { App } from '~/components/app'
 import Layout from '../layouts/Layout.astro'
 import { Slider } from '~/components/slider/slider'
+
+const convex = new ConvexHttpClient(import.meta.env.CONVEX_URL)
+const files = await convex.query(api.files.listAllFiles)
 ---
 
 <Layout title="Lialina">
-  <Slider client:load />
+  <Slider client:load files={files} />
   <App client:load />
 </Layout>

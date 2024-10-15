@@ -1,3 +1,5 @@
+/* prettier-ignore-start */
+
 /* eslint-disable */
 /**
  * Generated `api` utility.
@@ -14,6 +16,7 @@ import type {
   FunctionReference,
 } from "convex/server";
 import type * as counter from "../counter.js";
+import type * as files from "../files.js";
 
 /**
  * A utility for referencing Convex functions in your app's API.
@@ -25,6 +28,7 @@ import type * as counter from "../counter.js";
  */
 declare const fullApi: ApiFromModules<{
   counter: typeof counter;
+  files: typeof files;
 }>;
 export declare const api: FilterApi<
   typeof fullApi,
@@ -34,3 +38,5 @@ export declare const internal: FilterApi<
   typeof fullApi,
   FunctionReference<any, "internal">
 >;
+
+/* prettier-ignore-end */
